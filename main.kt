@@ -79,6 +79,15 @@ fun getSum(n: Int) {
   println("La sumatoria de $n es $sumatoria")
 } 
 
+fun validacionPrimo(x: Int) : Boolean {
+  for (i in 2..x / 2) {
+      if (x % i == 0) {
+          return false
+      }
+  }
+  return true
+}
+
 /*
 Diseñar una función llamada MainMenú que generará un menú
 principal en línea de comando que ofrecerá las siguientes
