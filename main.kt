@@ -23,7 +23,7 @@ fun main(args: Array<String>) {
   }
   else if (option == 3){
     println("*Generador de números primos")
-   
+    getPrimeNumbers()
     
   }
   else if(option == 4){
@@ -86,6 +86,20 @@ fun validacionPrimo(x: Int) : Boolean {
       }
   }
   return true
+}
+
+fun getPrimeNumbers () {
+  var res = ""
+  var i = 0
+  var x = 1
+  while (i < 10) {
+    if (validacionPrimo(x)) {
+      res = "$res $x"
+      i = i + 1
+    }
+    x = x + 1
+  }
+  println("Los diez primeros números primos son $res")
 }
 
 /*
