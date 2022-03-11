@@ -19,11 +19,11 @@ fun main(args: Array<String>) {
   }
   else if(option == 2){
     println("*Calculador de sumatoria*")
-
+    getSum(n)
   }
   else if (option == 3){
     println("*Generador de números primos")
-
+   
     
   }
   else if(option == 4){
@@ -69,7 +69,15 @@ fun Acirculo(r: Int){
   val r2 = Math.pow(r.toDouble(), exponent.toDouble())
   var A = ((pi * r2) * 100.0).roundToInt() / 100.0
   println("El área para un círculo de radio $r es de $A")
-}
+} 
+
+fun getSum(n: Int) {
+  var sumatoria = 0
+  for (i in 1..n) {
+    sumatoria += i
+  }
+  println("La sumatoria de $n es $sumatoria")
+} 
 
 /*
 Diseñar una función llamada MainMenú que generará un menú
